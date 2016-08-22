@@ -2,6 +2,6 @@
 .DS_Store
 node_modules
 *.sock
-lib/http/public/stylesheets/main.css
 *.rdb
 test/incomplete
+*.swp

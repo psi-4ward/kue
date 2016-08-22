@@ -1,8 +1,8 @@
 {
   "name": "kue",
-  "version": "0.8.9",
+  "version": "0.11.1",
   "description": "Feature rich priority job queue backed by redis",
-  "homepage": "http://learnboost.github.com/kue/",
+  "homepage": "http://automattic.github.io/kue/",
   "keywords": [
     "job",
     "queue",
@@ -11,26 +11,45 @@
   ],
   "license": "MIT",
   "author": "TJ Holowaychuk <tj@learnboost.com>",
+  "contributors": [
+    {
+      "name": "Behrad Zari",
+      "email": "behradz@gmail.com"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/LearnBoost/kue.git"
+    "url": "https://github.com/Automattic/kue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Automattic/kue/issues"
   },
   "dependencies": {
-    "redis": "~0.10.0",
-    "express": "~3.1.1",
-    "jade": "1.1.5",
-    "stylus": "0.42.2",
-    "lodash": "^2.4.1",
-    "lodash-deep": "^1.1.0",
-    "nib": "0.5.0",
-    "reds": "~0.2.4"
+    "body-parser": "^1.12.2",
+    "express": "^4.12.2",
+    "lodash": "^4.0.0",
+    "lodash-deep": "^2.0.0",
+    "nib": "~1.1.0",
+    "node-redis-warlock": "~0.2.0",
+    "pug": "^2.0.0-beta3",
+    "redis": "~2.6.0-2",
+    "reds": "~0.2.5",
+    "stylus": "~0.52.4",
+    "yargs": "^4.0.0"
   },
   "devDependencies": {
-    "should": "~3.0.1",
-    "mocha": "~1.17.0",
-    "coffee-script": "~1.6.3"
+    "async": "^1.4.2",
+    "chai": "^3.3.0",
+    "coffee-script": "~1.10.0",
+    "mocha": "^2.3.3",
+    "should": "^3.1.0",
+    "sinon": "^1.17.2",
+    "supertest": "^1.1.0"
   },
   "main": "index",
+  "bin": {
+    "kue-dashboard": "bin/kue-dashboard"
+  },
   "scripts": {
     "test": "make test-all"
   }
